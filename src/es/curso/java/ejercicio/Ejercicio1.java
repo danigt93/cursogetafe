@@ -15,7 +15,7 @@ public class Ejercicio1 {
 		if (esPar) {
 			System.out.println("Sí nació en un año par " + esPar);
 		}
-
+ 
 		else {
 			System.out.println("No nació en un año par"); 
 		}
