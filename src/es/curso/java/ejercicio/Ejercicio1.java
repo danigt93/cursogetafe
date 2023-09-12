@@ -17,7 +17,7 @@ public class Ejercicio1 {
 		}
 
 		else {
-			System.out.println("No nació en un año par");
+			System.out.println("No nació en un año par"); 
 		}
 
 	}
