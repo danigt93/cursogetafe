@@ -1,6 +1,6 @@
 package es.curso.java.arrays;
 
-import es.curso.java.introduccion.funciones.Funciones2;
+import es.curso.java.funciones.Funciones2;
 
 public class Funciones3 {
 

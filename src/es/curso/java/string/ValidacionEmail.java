@@ -1,4 +1,4 @@
-package es.curso.java.String;
+package es.curso.java.string;
 
 import java.util.Scanner;
 
