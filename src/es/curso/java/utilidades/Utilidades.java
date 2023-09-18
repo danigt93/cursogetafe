@@ -4,32 +4,44 @@ import java.util.Scanner;
 
 public class Utilidades {
 
-	public static void main(String[] args) {
-		String menu = "MENU";
-		String newMenu = menu(menu);
-		System.out.println(newMenu);
+	public static String pideDatoTexto (String texto) {
+		String reply=null;
+		System.out.println(texto);
+		Scanner scan = new Scanner(System.in);
+		reply = scan.nextLine();
+		
+		return reply;
 	}
 	
-public static String menu (String texto) {
-	String opcion;
-	do {
-		System.out.println("1. Opcion 1\n" + "2. Opcion 2\n" + 
-				"3. Opcion 3\n" + "4. Opcion 4\n" +
-				"5. Opcion 5\n" + "6. Salir\n" );
+	public static int pideDatoNumerico (String texto) {
+		int reply=0;
+		System.out.println(texto);
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Ingresa la opcion que desees que aparezca en pantalla: ");
-		opcion = scan.nextLine();
+		reply = scan.nextInt();
 		
-		switch(opcion) {
-		case "1" : System.out.println("Opcion 1");break;
-		case "2" : System.out.println("Opcion 2");break;
-		case "3" : System.out.println("Opcion 3");break;
-		case "4" : System.out.println("Opcion 4");break;
-		case "5" : System.out.println("Opcion 5");break;
-		case "6" : System.out.println("Salir");break;
-		}
-	}while(Integer.parseInt(opcion)!=6);
-	return opcion;
+		return reply;
+	}
 	
- }
+	public static int pintarMenu(String menu) {
+		
+		return pintarMenu(menu, "Introduce una opción", "\n");
+	}
+	
+	
+	public static int pintarMenu(String menu, String pregunta, String caracterSeparacion) {
+		
+		
+		return pintarMenu(menu.split(caracterSeparacion),pregunta);
+	}
+	
+	
+	public static int pintarMenu(String[] menu, String pregunta) {
+		for (String opcion : menu) {
+			System.out.println(opcion);
+		}
+		//Pido la opción del menú
+		int opcion = pideDatoNumerico(pregunta);
+		
+		return opcion;
+	}
 }
