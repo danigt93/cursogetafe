@@ -1,7 +1,7 @@
 package es.curso.java.poo;
 
 //POJO
-public class Persona {
+public class Alumnos {
 
 	String nombre;
 	String apellidos;
@@ -9,17 +9,17 @@ public class Persona {
 	int nota;
 	
 	//3 constructores:
-	public Persona() {
+	public Alumnos() {
 		this.nombre = "";
 	}
 	
-	public Persona(String nombre , String apellidos, String dni) {
+	public Alumnos(String nombre , String apellidos, String dni) {
 		this.nombre = nombre;		//THIS. se pone para decirle que se fije en la variable que he puesto como String nombre de la línea 6
 		this.apellidos = apellidos;
 		this.dni = dni;
 	}
 	
-	public Persona(String nombre , String apellidos, String dni, int nota) {
+	public Alumnos(String nombre , String apellidos, String dni, int nota) {
 		this.nombre = nombre;		//THIS. se pone para decirle que se fije en la variable que he puesto como String nombre de la línea 6
 		this.apellidos = apellidos;
 		this.dni = dni;

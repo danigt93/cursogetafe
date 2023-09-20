@@ -1,17 +1,17 @@
 package es.curso.java.poo;
 
-public class PersonasMain {
+public class AlumnosMain {
 
 	public static void main(String[] args) {
 		
-		Persona p1 = new Persona(); //Siemrpe que veas NEW es porque se esta creando un objeto
+		Alumnos p1 = new Alumnos(); //Siemrpe que veas NEW es porque se esta creando un objeto
 		System.out.println(p1.nombre);
 		System.out.println(p1.nota);
 		p1.nombre = "Eva";
 		System.out.println(p1.nombre);
 		
-		Persona p2 = new Persona();
-		Persona p3 = p1;
+		Alumnos p2 = new Alumnos();
+		Alumnos p3 = p1;
 		p1 = p2;
 		p2.nombre = "María";
 		
