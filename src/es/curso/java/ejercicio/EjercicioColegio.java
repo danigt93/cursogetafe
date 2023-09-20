@@ -17,11 +17,11 @@ public class EjercicioColegio {
 		int [] alumnos = new int [numAlum];
 		
 		
-		for(int j = 0; j<numAlum ; j++) {
-		System.out.println("Alumno " + j);
-		
-			String [] datos = {"Nombre:DNI:Nota"};
-			for(int f = 0; f<datos.length ; f++ ) {
+			for(int j = 0; j<numAlum ; j++) {
+			System.out.println("Alumno " + j);
+			
+				String [] datos = {"Nombre:DNI:Nota"};
+				for(int f = 0; f<datos.length ; f++ ) {
 				
 			
 					}

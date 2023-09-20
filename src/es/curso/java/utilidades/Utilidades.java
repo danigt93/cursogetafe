@@ -15,7 +15,7 @@ public class Utilidades {
 	
 	public static int pideDatoNumerico (String texto) {
 		int reply=0;
-		System.out.println(texto);
+		System.out.println("Que opción deseas elegir?");
 		Scanner scan = new Scanner(System.in);
 		reply = scan.nextInt();
 		
@@ -24,10 +24,9 @@ public class Utilidades {
 	
 	public static int pintarMenu(String menu) {
 		
-		return pintarMenu(menu, "Introduce una opción", "\n");
+		return pintarMenu("1. Suma\n" + "2. Resta\n" + "3. Multiplicación\n" + "4. División\n" + "5. Salir\n");
 	}
-	
-	
+
 	public static int pintarMenu(String menu, String pregunta, String caracterSeparacion) {
 		
 		
