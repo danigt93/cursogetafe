@@ -5,10 +5,10 @@ public class Camisa {
 	private long id;
 	private String talla;
 	private String color;
-	private String precio;
+	private double precio;
 	private Boton[]boton;
 	
-	public Camisa(long id, String talla, String color, String precio, Boton[] boton) {
+	public Camisa(long id, String talla, String color, double precio, Boton[] boton) {
 		super();
 		this.id = id;
 		this.talla = talla;
@@ -33,11 +33,11 @@ public class Camisa {
 		this.color = color;
 	}
 
-	public String getPrecio() {
+	public double getPrecio() {
 		return precio;
 	}
 
-	public void setPrecio(String precio) {
+	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
 

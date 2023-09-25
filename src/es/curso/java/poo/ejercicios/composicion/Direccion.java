@@ -1,4 +1,4 @@
-package es.curso.java.poo.ejercicios;
+package es.curso.java.poo.ejercicios.composicion;
 
 public class Direccion {
 

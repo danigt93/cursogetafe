@@ -12,30 +12,19 @@ public class Maniqui {
 		this.id = id;
 	}
 	
-	public Maniqui(long id, Vestido vestido, Pantalon pantalon, Camisa camisa) {
+	public Maniqui(long id, Pantalon pantalon, Camisa camisa) {
 		this.id = id;
 		this.pantalon = pantalon;
 		this.camisa = camisa;
-		this.vestido = vestido;
-	}
-
-	public void vestir(Pantalon pantalon, Camisa camisa) {
-		
-		System.out.println("El maniqui lleva puesto el " + pantalon + " y la " + camisa);
-		
-	}
-
-	public void desvestir() {
-		
-		this.pantalon = null;
-		this.camisa = null;
-		this.vestido = null;
 		
 	}
 	
+	public Maniqui(long id, Vestido vestido) {
+		this.id = id;
+		this.vestido = vestido;	
+	}
 	
 	
-
 	public Vestido getVestido() {
 		return vestido;
 	}
@@ -64,7 +53,26 @@ public class Maniqui {
 		return id;
 	}
 	
+	//Métodos:
+	
+	public void vestir(Pantalon pantalon, Camisa camisa) {
+		desvestir();
+		this.pantalon = pantalon;
+		this.camisa = camisa;		
+	}
+	
+	public void vestir(Vestido vestido) {
+		desvestir();
+		this.vestido = vestido;	
+	}
 
+	public void desvestir() {
+		
+		this.pantalon = null;
+		this.camisa = null;
+		this.vestido = null;
+		
+	}
 	
 
 	

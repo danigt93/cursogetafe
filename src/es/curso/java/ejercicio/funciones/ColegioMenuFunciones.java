@@ -2,7 +2,7 @@ package es.curso.java.ejercicio.funciones;
 
 import java.util.Scanner;
 
-import es.curso.java.utils.Utilidades;
+import es.curso.java.utilidades.Utilidades;
 
 public class ColegioMenuFunciones {
 	
