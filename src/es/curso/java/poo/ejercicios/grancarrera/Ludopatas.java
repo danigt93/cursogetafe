@@ -49,14 +49,20 @@ public class Ludopatas {
 	public void apuesta(Ludopatas...apuestas) {
 
 		Scanner scan = new Scanner(System.in);
-		int apuestasJugadores = 0;
-//		int saldo = 5000;
+		int apuestaSaldo = scan.nextInt();
+		boolean sinSaldo = false;
+		int saldoRestante = 0;
 				
 			for (Ludopatas apuesta : apuestas) {
-				apuestasJugadores = scan.nextInt();
+				
 				do {
+					for(int i=0;saldo!=0;i++) {
+						if() {
 					
-				}while();
+						}
+					}
+					
+				}while(!sinSaldo);
 			}
 	}
 }
