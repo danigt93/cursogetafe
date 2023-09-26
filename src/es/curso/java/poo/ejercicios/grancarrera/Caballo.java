@@ -1,24 +1,28 @@
 package es.curso.java.poo.ejercicios.grancarrera;
 
+import java.util.Random;
+
 public class Caballo {
 
-	private String id;
+	private long id;
 	private String nombre;
-	private int numero;
+	private int dorsal;
 	private int edad;
 	private int velocidad;
 	private int peso;
+	private double avance;
 	
-	public Caballo(String id, String nombre, int numero, int edad, int velocidad, int peso) {
+	public Caballo(long id, String nombre, int dorsal, int edad, int velocidad, int peso) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
-		this.numero = numero;
+		this.dorsal = dorsal;
 		this.edad = edad;
 		this.velocidad = velocidad;
 		this.peso = peso;
 	}
 
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -27,12 +31,12 @@ public class Caballo {
 		this.nombre = nombre;
 	}
 
-	public int getNumero() {
-		return numero;
+	public int getDorsal() {
+		return dorsal;
 	}
 
-	public void setNumero(int numero) {
-		this.numero = numero;
+	public void setDorsal(int dorsal) {
+		this.dorsal = dorsal;
 	}
 
 	public int getEdad() {
@@ -59,28 +63,39 @@ public class Caballo {
 		this.peso = peso;
 	}
 
-	public String getId() {
+	public long getId() {
 		return id;
+	}
+	
+	public double getAvance() {
+		return avance;
 	}
 	
 	
 	
-	public void metodoCorrer() {
+	public void correr() {
+
+		//OTRA FORMA DE HACER EL RANDOM
+//		double avanceCaballos = 0;
+//		
+//		Random rd1 = new Random();
+//		int randomVelocidad = rd1.nextInt(1, 20);
+//		int randomPeso = rd1.nextInt(1, 3);
+//		int randomEdad = rd1.nextInt(1, 3);
+//		
+//		avanceCaballo = this.velocidad * randomVelocidad - this.peso * randomPeso - this.edad * randomEdad;
+//		
+//		this.avance += avanceCaballo > 0 ? avanceCaballo : 0;
+		
 		
 		int velocidadCaballos = velocidad * (int)((Math.random()*20));
 		int pesoCaballos = peso * (int)(Math.random()*3);
 		int edadCaballos = edad * (int)(Math.random()*3);
 		
-		int avanceCaballos = velocidadCaballos - pesoCaballos - edadCaballos;
-		System.out.println(avanceCaballos);
-		
-		
-		//(simular avance del caballo)
-		//velocidad*(random(1-20))-peso*(random(1-3))-edad*(random(1-3));
-		
-		
-		//System.out.println("Caballo" +  + " avanza " +  + " metros");
-		
+		avance += velocidadCaballos - pesoCaballos - edadCaballos;
 	}
+
+
+
 	
 }
