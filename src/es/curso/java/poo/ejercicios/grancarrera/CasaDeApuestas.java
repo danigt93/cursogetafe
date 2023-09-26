@@ -1,5 +1,7 @@
 package es.curso.java.poo.ejercicios.grancarrera;
 
+import java.util.Scanner;
+
 public class CasaDeApuestas {
 
 	public static void main(String[] args) {
@@ -28,32 +30,14 @@ public class CasaDeApuestas {
 	
 	Ludopatas a1 = new Ludopatas("Alfred",5000,0);
 	Ludopatas a2 = new Ludopatas("Dorothy",5000,0);
+	
+	Ludopatas [] ludopatas = {a1,a2};
+	
+	
 	//Mostrar los datos del gran premio
 	System.out.println();
 		
 		
 	}
-	
-	public void mostrarDatos(GranPremio...granpremios){
-		
-		for (GranPremio granPremio : granpremios) {
-			
-		}
-	}
 
-	
-	public void apuesta() {
-
-		int apuestas;
-		int saldo;
-				
-//			for (Apostante apostante : apostante) {
-//				
-//			}
-		
-		
-		
-		
-		System.out.println("Buenas " );
-	}
 }

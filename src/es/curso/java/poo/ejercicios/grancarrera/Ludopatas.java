@@ -1,5 +1,7 @@
 package es.curso.java.poo.ejercicios.grancarrera;
 
+import java.util.Scanner;
+
 public class Ludopatas {
 	
 	private String nombre;
@@ -8,7 +10,7 @@ public class Ludopatas {
 	
 		
 	public Ludopatas(String nombre, int saldo, int apuesta) {
-		super();
+		
 		this.nombre = nombre;
 		this.saldo = saldo;
 		this.apuesta = apuesta;
@@ -44,6 +46,17 @@ public class Ludopatas {
 		this.apuesta = apuesta;
 	}
 	
+	public void apuesta(Ludopatas...apuestas) {
 
-	
+		Scanner scan = new Scanner(System.in);
+		int apuestasJugadores = 0;
+//		int saldo = 5000;
+				
+			for (Ludopatas apuesta : apuestas) {
+				apuestasJugadores = scan.nextInt();
+				do {
+					
+				}while();
+			}
+	}
 }
