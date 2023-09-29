@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Ludopatas {
 	
 	private String nombre;
-	private int saldo;
-	private int apuesta;
+	private double saldo;
+	private double apuesta;
 	
 		
-	public Ludopatas(String nombre, int saldo, int apuesta) {
+	public Ludopatas(String nombre, double saldo, double apuesta) {
 		
 		this.nombre = nombre;
 		this.saldo = saldo;
@@ -27,42 +27,49 @@ public class Ludopatas {
 	}
 
 
-	public int getSaldo() {
+	public double getSaldo() {
 		return saldo;
 	}
 
 
-	public void setSaldo(int saldo) {
-		this.saldo = saldo;
-	}
-
-
-	public int getApuesta() {
+	public double getApuesta() {
 		return apuesta;
 	}
 
 
-	public void setApuesta(int apuesta) {
+	public void setApuesta(double apuesta) {
 		this.apuesta = apuesta;
 	}
+	
+	
 	
 	public void apuesta(Ludopatas...apuestas) {
 
 		Scanner scan = new Scanner(System.in);
-		int apuestaSaldo = scan.nextInt();
 		boolean sinSaldo = false;
-		int saldoRestante = 0;
+		double saldoRestante = 0;
 				
-			for (Ludopatas apuesta : apuestas) {
-				
-				do {
-					for(int i=0;saldo!=0;i++) {
-						if() {
-					
-						}
-					}
-					
-				}while(!sinSaldo);
-			}
+//			for (Ludopatas apuesta : apuestas) {
+//				
+//				do {
+//					
+//					
+//					for(int i=0;saldo!=0;i++) {
+//						double importeApuesta = scan.nextDouble();
+//						saldoRestante = saldo - importeApuesta;
+//						
+//						
+//						if () {
+//							double ganancia = (importeApuesta*2);
+//							System.out.println("Enhorabuena has ganado "+ ganancia + " euros");
+//							saldo +=  ganancia ;
+//							importeApuesta++;
+//						}else {
+//							System.out.println("Has perdido, sigue probando");
+//						}
+//					}
+//					
+//				}while(!sinSaldo);
+//			}
 	}
 }
