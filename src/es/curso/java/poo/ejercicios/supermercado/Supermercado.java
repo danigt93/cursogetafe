@@ -1,80 +1,51 @@
 package es.curso.java.poo.ejercicios.supermercado;
 
 public class Supermercado {
-
-
-		private long id;
-		private String nombre;
-		private Cajera [] cajeras;
-		private Cliente [] clientes;
-	
+	private String nombre;
+	private Cajera [] cajeras;
 	
 	public Supermercado(String nombre) {
 		this.nombre = nombre;
 	}
 
-
 	public String getNombre() {
 		return nombre;
 	}
-
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
-
-	public Cajera[] getCajeras() {
-		return cajeras;
-	}
-
-
-	public void setCajeras(Cajera[] cajeras) {
-		this.cajeras = cajeras;
-	}
-
-
-	public long getId() {
-		return id;
-	}
-
-	public Cliente[] getClientes() {
-		return clientes;
-	}
-	
 	public static void main(String[] args) {
-		Supermercado supermercado = new Supermercado ("Supermercado CFTIC");
+		Supermercado supermercado = new Supermercado("Supermecado CFTIC");
 		supermercado.abrirSupermercado();
-		
-		
-		
 	}
 	
-	public void abrirSupermercado(){
-//		3 clientes --> añadirProductos al carrito
-//		2 cajeras --> cobrar a los clientes
-//		cada cliente tiene que pagar el importe de la compra
+	public void abrirSupermercado() {
+		Producto p1 = new Producto(1,"Tomate Frito",3,"Alimento");
+		Producto p2 = new Producto(2,"Tomate Frito",4,"Alimento");
+		Producto p3 = new Producto(3,"Tomate Frito",5,"Alimento");
+		Producto p4 = new Producto(4,"Tomate Frito",6,"Alimento");
+		Producto p5 = new Producto(5,"Tomate Frito",7,"Alimento");
+		Producto p6 = new Producto(6,"Tomate Frito",8,"Alimento");
+		Producto p7 = new Producto(7,"Tomate Frito",9,"Alimento");
 		
-		Producto p1 = new Producto(01,"Pan",3.80,"Alimento");
-		Producto p2 = new Producto(02,"Tv",1500,"Electrodoméstico");
-		Producto p3 = new Producto(03,"Champoo",4.50,"Higiene");
-		Producto p4 = new Producto(04,"Friegasuelos",3.75,"Limpieza");
-		Producto p5 = new Producto(05,"Pilas",7.80,"Electrónica");
+		Cliente c1 = new Cliente(1,"Cliente1",true);
 		
-		Producto [] productos = {p1,p2,p3,p4,p5};
+		//añadimos productos al carrito
+		c1.aniadirProducto(p1);
+		c1.aniadirProducto(p2);
+		c1.aniadirProducto(p7,p5);
 		
-		Cliente c1 = new Cliente(11, "Felipe", true);
-		Cliente c2 = new Cliente(12, "Ana", false);
-		Cliente c3 = new Cliente(13, "Casilda", true);
-		
-		Cliente [] clientes = {c1,c2,c3};
-		
-		Cajera cj1 = new Cajera("María");
-		Cajera cj2 = new Cajera("Laura");
-		
+		Cajera cajera1 = new Cajera(1,"Cajera1");
+		double importeCompra = cajera1.cobrar(c1);
+		try {
+			c1.pagar(importeCompra);
+		} catch (PagoConTarjetaException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-
-	
+		
+	}
 }
-
 
