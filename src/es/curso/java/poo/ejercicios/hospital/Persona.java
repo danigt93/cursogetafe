@@ -1,17 +1,21 @@
-package es.curso.java.poo.herencia.hospital;
+package es.curso.java.poo.ejercicios.hospital;
 
 public abstract class Persona {
+	
 	private long id;
 	private String nombre;
 	private int edad;
 	
+	
+	
 	public Persona(long id, String nombre, int edad) {
-		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.edad = edad;
 	}
 
+	
+	
 	public long getId() {
 		return id;
 	}

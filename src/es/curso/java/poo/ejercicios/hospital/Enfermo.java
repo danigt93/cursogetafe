@@ -1,4 +1,4 @@
-package es.curso.java.poo.herencia.hospital;
+package es.curso.java.poo.ejercicios.hospital;
 
 public final class Enfermo extends Persona{
 	private String enfermedad; 
