@@ -1,6 +1,6 @@
-package es.curso.java.poo.ejercicios.hospital;
+package es.curso.java.colecciones;
 
-public abstract class Persona {
+public  class Persona {
 	private long id;
 	private String nombre;
 	private int edad;
@@ -40,7 +40,7 @@ public abstract class Persona {
 		this.edad = edad;
 	}
 	
-	public abstract void comer();
+	//public abstract void comer();
 
 
 }

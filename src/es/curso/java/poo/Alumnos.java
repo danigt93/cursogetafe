@@ -83,4 +83,12 @@ public class Alumnos {
 	public void setNota(double nota) {
 		this.nota = nota;
 	}
+
+	@Override
+	public String toString() {
+		return "Alumnos [" + (nombre != null ? "nombre=" + nombre + ", " : "")
+				+ (apellidos != null ? "apellidos=" + apellidos + ", " : "") + (dni != null ? "dni=" + dni : "") + "]";
+	}
+
+
 }
