@@ -36,7 +36,7 @@ public class BibliotecaMain {
 		cargarDatosBiblioteca();
 		int opcion = crearMenuPrincipal();
 		if (opcion==(mapBibliotecas.size()+1)) {
-			System.out.println("Adios");
+			System.out.println("Adios"); 
 			
 		}else {
 			Biblioteca biblioElegida= mapBibliotecas.get(opcion);
