@@ -1,7 +1,6 @@
 package es.curso.java.excepciones.ejercicios;
 
-public class TooHotTemperatureException 
-	extends TemperatureException{
+public class TooHotTemperatureException extends TemperatureException{
 	
 
 	public TooHotTemperatureException 

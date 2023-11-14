@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Utilidades {
 
 	public static String pideDatoTexto (String texto) {
-		String reply=null;
+		String reply = null;
 		System.out.println(texto);
 		Scanner scan = new Scanner(System.in);
 		reply = scan.nextLine();
@@ -14,7 +14,7 @@ public class Utilidades {
 	}
 	
 	public static int pideDatoNumerico (String texto) {
-		int reply=0;
+		int reply = 0;
 		System.out.println("Que opción deseas elegir?");
 		Scanner scan = new Scanner(System.in);
 		reply = scan.nextInt();
@@ -24,8 +24,9 @@ public class Utilidades {
 	
 	public static int pintarMenu(String menu) {
 		
-		return pintarMenu("1. Suma\n" + "2. Resta\n" + "3. Multiplicación\n" + "4. División\n" + "5. Salir\n");
+		return pintarMenu(menu, "Introduce una opción", "\n");
 	}
+	
 
 	public static int pintarMenu(String menu, String pregunta, String caracterSeparacion) {
 		
