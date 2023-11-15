@@ -1,37 +1,31 @@
-package es.curso.java.ddbb;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+package es.curso.java.ddbb.ejercicios;
 
 public class Facility {
-
 	private long id;
 	private long guid;
 	private String name;
 	private String description;
 	private String category;
-	private String adress;
-	private double height;
-
+	private String address;
+	private double heigth;
 	
-	public Facility(long id, long guid, String name, String description, String category, String adress, double height) {
+	
+	
+	public Facility() {
+		super();
+	}
+
+	public Facility(long id, long guid, String name, String description, 
+			String category, String address, double heigth) {
 		super();
 		this.id = id;
 		this.guid = guid;
 		this.name = name;
 		this.description = description;
 		this.category = category;
-		this.adress = adress;
-		this.height = height;
+		this.address = address;
+		this.heigth = heigth;
 	}
-	
-	public Facility() {
-	
-	}
-
 
 	/**
 	 * @return the id
@@ -40,14 +34,12 @@ public class Facility {
 		return id;
 	}
 
-
 	/**
 	 * @param id the id to set
 	 */
 	public void setId(long id) {
 		this.id = id;
 	}
-
 
 	/**
 	 * @return the guid
@@ -56,14 +48,12 @@ public class Facility {
 		return guid;
 	}
 
-
 	/**
 	 * @param guid the guid to set
 	 */
 	public void setGuid(long guid) {
 		this.guid = guid;
 	}
-
 
 	/**
 	 * @return the name
@@ -72,14 +62,12 @@ public class Facility {
 		return name;
 	}
 
-
 	/**
 	 * @param name the name to set
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
-
 
 	/**
 	 * @return the description
@@ -88,7 +76,6 @@ public class Facility {
 		return description;
 	}
 
-
 	/**
 	 * @param description the description to set
 	 */
@@ -96,14 +83,12 @@ public class Facility {
 		this.description = description;
 	}
 
-
 	/**
 	 * @return the category
 	 */
 	public String getCategory() {
 		return category;
 	}
-
 
 	/**
 	 * @param category the category to set
@@ -113,31 +98,31 @@ public class Facility {
 	}
 
 	/**
-	 * @return the adress
+	 * @return the address
 	 */
-	public String getAdress() {
-		return adress;
+	public String getAddress() {
+		return address;
 	}
 
 	/**
-	 * @param adress the adress to set
+	 * @param address the address to set
 	 */
-	public void setAdress(String adress) {
-		this.adress = adress;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	/**
-	 * @return the height
+	 * @return the heigth
 	 */
-	public double getHeight() {
-		return height;
+	public double getHeigth() {
+		return heigth;
 	}
 
 	/**
-	 * @param height the height to set
+	 * @param heigth the heigth to set
 	 */
-	public void setHeight(double height) {
-		this.height = height;
+	public void setHeigth(double heigth) {
+		this.heigth = heigth;
 	}
 
 	@Override
@@ -145,8 +130,10 @@ public class Facility {
 		return "Facility [id=" + id + ", guid=" + guid + ", " + (name != null ? "name=" + name + ", " : "")
 				+ (description != null ? "description=" + description + ", " : "")
 				+ (category != null ? "category=" + category + ", " : "")
-				+ (adress != null ? "adress=" + adress + ", " : "") + "height=" + height + "]";
+				+ (address != null ? "address=" + address + ", " : "") + "heigth=" + heigth + "]";
 	}
+
+	
 
 	
 }

@@ -1,4 +1,4 @@
-package es.curso.java.ddbb.ejercicio.libreria.entities;
+package es.curso.java.ddbb.ejercicios.biblioteca.entities;
 
 public class Biblioteca {
 	private long id;
