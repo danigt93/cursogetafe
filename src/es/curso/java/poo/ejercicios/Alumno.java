@@ -20,7 +20,7 @@ public class Alumno {
 		this.apellidos = apellidos;
 	}
 	
-	public Alumno (String dni, String nombre, String apellidos , double nota) {
+	public Alumno (String dni, String nombre, String apellidos , double nota, boolean vip) {
 		this.dni = dni;
 		this.nombre = nombre;
 		this.apellidos = apellidos;
