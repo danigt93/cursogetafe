@@ -20,7 +20,7 @@ public class ConexionBaseDeDatos {
 	}
 	
 	private void conectaTryWithResources() {
-		String url = "jdbc:mysql://localhost:3306/curso?serverTimezone=Europe/Madrid";
+		String url = "jdbc:mysql://localhost:3306/bbdd_basededatoscurso?serverTimezone=Europe/Madrid";
 		String username = "root";
 		String password = "password";
 		
@@ -56,7 +56,7 @@ public class ConexionBaseDeDatos {
 	
 
 	private void conecta() {
-		String url = "jdbc:mysql://localhost:3306/curso?serverTimezone=Europe/Madrid";
+		String url = "jdbc:mysql://localhost:3306/bbdd_basededatoscurso?serverTimezone=Europe/Madrid";
 		String username = "root";
 		String password = "password";
 
@@ -104,7 +104,7 @@ public class ConexionBaseDeDatos {
 	
 	
 	private void selectPrepareStatement() {
-		String url = "jdbc:mysql://localhost:3306/curso?serverTimezone=Europe/Madrid";
+		String url = "jdbc:mysql://localhost:3306/bbdd_basededatoscurso?serverTimezone=Europe/Madrid";
 		String username = "root";
 		String password = "password";
 
@@ -158,7 +158,7 @@ public class ConexionBaseDeDatos {
 	}
 	
 	private void insertPrepareStatement() {
-		String url = "jdbc:mysql://localhost:3306/curso?serverTimezone=Europe/Madrid";
+		String url = "jdbc:mysql://localhost:3306/bbdd_basededatoscurso?serverTimezone=Europe/Madrid";
 		String username = "root";
 		String password = "password";
 
