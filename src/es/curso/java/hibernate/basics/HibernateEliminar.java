@@ -14,7 +14,7 @@ public class HibernateEliminar {
         Long id = scan.nextLong();
         EntityManager em = JpaUtil.getEntityManager();
         try {
-            Cliente cliente = em.find(Cliente.class, id);
+            Cliente cliente = em.find(Cliente.class, id);    //Para eliminar en Hibernate, 1º SIEMPRE hay que buscar el dato, en este caso, el cliente
             //Cliente cliente1 = new Cliente();
             em.getTransaction().begin();
             em.remove(cliente);
