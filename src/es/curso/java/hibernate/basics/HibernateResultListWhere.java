@@ -13,7 +13,7 @@ public class HibernateResultListWhere {
 
         Scanner scanner = new Scanner(System.in);
 
-        EntityManager em = JpaUtil.getEntityManager();
+        EntityManager em = JpaUtil.getEM("hibernateMySQL");
         Query query = em.createQuery("from Cliente c where c.formaPago=?1", Cliente.class);
         System.out.println("Ingrese una forma de pago: ");
         String pago = scanner.next();
