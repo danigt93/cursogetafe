@@ -75,6 +75,20 @@ public class Cliente {
         this.formaPago = formaPago;
     }
 
+    /**
+  	 * @return the campo1
+  	 */
+  	public String getCampo1() {
+  		return campo1;
+  	}
+
+  	/**
+  	 * @param campo1 the campo1 to set
+  	 */
+  	public void setCampo1(String campo1) {
+  		this.campo1 = campo1;
+  	}
+    
     @Override
     public String toString() {
         return "id=" + id +
