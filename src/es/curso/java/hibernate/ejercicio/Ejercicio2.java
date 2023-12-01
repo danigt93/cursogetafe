@@ -9,7 +9,6 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
-import es.curso.java.hibernate.basics.daos.AlumnoHibernateDAO;
 import es.curso.java.hibernate.ejercicio.dao.UserDAO;
 import es.curso.java.hibernate.ejercicio.entity.UsuarioEntity;
 import es.curso.java.hibernate.util.JpaUtil;
