@@ -50,7 +50,7 @@ public class Ejercicio2{
 	}
 	
 	public List<UsuarioEntity> consultaUsuarios(UserDAO userDao) {
-		
+		 
 		return userDao.getUsers();
 	}
 	
