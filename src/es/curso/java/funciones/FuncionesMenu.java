@@ -1,6 +1,5 @@
 package es.curso.java.funciones;
 
-import es.curso.java.utilidades.OperacionesCalculadora;
 import es.curso.java.utilidades.Utilidades;
 
 public class FuncionesMenu {

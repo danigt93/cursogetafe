@@ -4,14 +4,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
 import es.curso.java.ddbb.ejercicios.biblioteca.entities.Biblioteca;
 import es.curso.java.ddbb.ejercicios.biblioteca.entities.Direccion;
-import es.curso.java.ficheros.ejercicios.LeerFicheroBiblioteca;
 
 public class LeerFicheroBiblioteca {
 

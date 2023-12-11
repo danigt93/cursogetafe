@@ -1,7 +1,5 @@
 package es.curso.java.excepciones;
 
-import java.util.concurrent.ExecutionException;
-
 public class PruebaExcepciones {
 
 private static String [] colores;

@@ -1,8 +1,6 @@
 package es.curso.java.excepciones;
 
 import java.io.IOException;
-import es.curso.java.excepciones.MiExcepcion;
-import es.curso.java.excepciones.LanzarExcepciones;
 
 
 public class LanzarExcepciones {

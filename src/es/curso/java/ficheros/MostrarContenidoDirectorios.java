@@ -1,7 +1,5 @@
 package es.curso.java.ficheros;
 
-import java.io.File;
-
 public class MostrarContenidoDirectorios {
 	
 	

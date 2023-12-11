@@ -1,7 +1,5 @@
 package es.curso.java.poo.ejercicios.grancarrera;
 
-import java.util.Scanner;
-
 public class CasaDeApuestas {
 
 	public static void main(String[] args) {

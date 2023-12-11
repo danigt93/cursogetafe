@@ -1,9 +1,5 @@
 package es.curso.java.guerra;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 import es.curso.java.guerra.excepciones.HabilidadesException;
 import es.curso.java.guerra.excepciones.UnidadesPermitidasException;
 

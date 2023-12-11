@@ -7,7 +7,6 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-import es.curso.java.ficheros.ejercicios.LeerFicheroAlumnos;
 import es.curso.java.poo.ejercicios.Alumno;
 
 public class LeerFicheroAlumnos {

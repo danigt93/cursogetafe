@@ -1,7 +1,5 @@
 package es.curso.java.poo.ejercicios.grancarrera;
 
-import java.util.Random;
-
 public class Caballo {
 
 	private long id;
