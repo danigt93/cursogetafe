@@ -23,7 +23,7 @@ public class ArrayDiagonales {public static void main(String[] args) {
 	}
 	
 	//Mostramos los datos de la matriz
-	for (int i=0; i<numeros.length; i++) {
+	for (int i=0; i<numeros.length; i++) { 
 		for (int j=0; j<numeros[i].length; j++) {
 			System.out.print(numeros[i][j]);
 		}
