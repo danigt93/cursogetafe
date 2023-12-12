@@ -10,7 +10,7 @@ public class ArrayDiagonales {public static void main(String[] args) {
 	//Declaramos la matriz cuadrada
 	int[][] numeros = new int[num][num];
 	
-	//Rellenamos la matriz 
+	//Rellenamos la matriz  
 	for (int i=0; i<numeros.length; i++) {
 		for (int j=0; j<numeros[i].length; j++) {
 			
