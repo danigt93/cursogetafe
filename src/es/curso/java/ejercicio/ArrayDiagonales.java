@@ -18,7 +18,7 @@ public class ArrayDiagonales {public static void main(String[] args) {
 			scan = new Scanner (System.in);
 			System.out.println("Introduce el "
 					+ "valor de la posición ["+i+"],["+j+"]");
-			numeros[i][j]=scan.nextInt();
+			numeros[i][j]=scan.nextInt(); 
 		}
 	}
 	
