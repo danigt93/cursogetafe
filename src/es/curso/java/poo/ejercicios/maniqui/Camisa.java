@@ -3,25 +3,44 @@ package es.curso.java.poo.ejercicios.maniqui;
 public class Camisa {
 
 	private long id;
-	private String talla;
+	private double talla;
 	private String color;
 	private double precio;
-	private Boton[]boton;
+	private Boton[] botones;
 	
-	public Camisa(long id, String talla, String color, double precio, Boton[] boton) {
+	public Camisa(long id, double talla, String color, 
+			double precio, Boton[] botones) {
 		super();
 		this.id = id;
 		this.talla = talla;
 		this.color = color;
 		this.precio = precio;
-		this.boton = boton;
+		this.botones=botones;
 	}
 
-	public String getTalla() {
+	public Camisa(long id, double talla, String color, 
+			double precio) {
+		super();
+		this.id = id;
+		this.talla = talla;
+		this.color = color;
+		this.precio = precio;
+	}
+	
+	
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public double getTalla() {
 		return talla;
 	}
 
-	public void setTalla(String talla) {
+	public void setTalla(double talla) {
 		this.talla = talla;
 	}
 
@@ -40,18 +59,15 @@ public class Camisa {
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-
-	public Boton[] getBoton() {
-		return boton;
-	}
-
-	public void setBoton(Boton[] boton) {
-		this.boton = boton;
-	}
-
-	public long getId() {
-		return id;
-	}
 	
+
+	public Boton[] getBotones() {
+		return botones;
+	}
+
+	public void setBotones(Boton[] botones) {
+		this.botones = botones;
+	}
+
 	
 }

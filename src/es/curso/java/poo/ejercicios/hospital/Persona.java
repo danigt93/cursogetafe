@@ -11,10 +11,6 @@ public abstract class Persona {
 		this.nombre = nombre;
 		this.edad = edad;
 	}
-	
-	public Persona(String nombre) {
-		this.nombre = nombre;
-	}
 
 	public long getId() {
 		return id;
@@ -41,6 +37,5 @@ public abstract class Persona {
 	}
 	
 	public abstract void comer();
-
 
 }

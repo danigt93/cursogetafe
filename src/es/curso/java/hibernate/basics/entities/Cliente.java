@@ -12,7 +12,7 @@ import jakarta.persistence.Transient;
 @Table(name="TB_CLIENTES")
 public class Cliente {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     @Column(name="nombre_cliente", length = 30 , nullable = false )
@@ -23,10 +23,10 @@ public class Cliente {
     @Column(name="forma_pago", length = 10 )
     private String formaPago;
     
-    @Transient
+ 
     private String campo1;
 
-    //Debe existir obligatoriamente
+    //Debe existir obligatoriamente 
     public Cliente() {
     }
 
@@ -74,22 +74,24 @@ public class Cliente {
     public void setFormaPago(String formaPago) {
         this.formaPago = formaPago;
     }
+    
+    
 
     /**
-  	 * @return the campo1
-  	 */
-  	public String getCampo1() {
-  		return campo1;
-  	}
+	 * @return the campo1
+	 */
+	public String getCampo1() {
+		return campo1;
+	}
 
-  	/**
-  	 * @param campo1 the campo1 to set
-  	 */
-  	public void setCampo1(String campo1) {
-  		this.campo1 = campo1;
-  	}
-    
-    @Override
+	/**
+	 * @param campo1 the campo1 to set
+	 */
+	public void setCampo1(String campo1) {
+		this.campo1 = campo1;
+	}
+
+	@Override
     public String toString() {
         return "id=" + id +
                 ", nombre='" + nombre + '\'' +

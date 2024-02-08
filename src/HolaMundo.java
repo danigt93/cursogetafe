@@ -1,7 +1,5 @@
-
 public class HolaMundo {
-	public static void main(String [] args) {
-		System.out.println("Hola, Soy tu padre");
-				
+	public static void main(String[] args) {
+		System.out.println("Hola Mundo5");
 	}
 }

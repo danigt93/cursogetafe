@@ -12,7 +12,6 @@ import java.util.Set;
 import es.curso.java.ddbb.ejercicios.Facility;
 import oracle.jdbc.pool.OracleDataSource;
 
-
 public class ConexionBaseDeDatos {
 
 	public static void main(String[] args) {

@@ -2,7 +2,7 @@ package es.curso.java.excepciones;
 
 public class PruebaExcepciones {
 
-private static String [] colores;
+	private static String [] colores;
 	
 	public static void main(String[] args) {
 		
@@ -35,4 +35,5 @@ private static String [] colores;
 		
 
 	}
-	}
+
+}

@@ -3,7 +3,7 @@ package es.curso.java.hibernate.ejercicios.ejercicio2.dao;
 import java.util.Date;
 import java.util.List;
 
-import es.curso.java.hibernate.ejercicios.ejercicio2.entity.Producto;
+import es.curso.java.hibernate.ejercicios.ejercicio2.entities.Producto;
 import es.curso.java.hibernate.ejercicios.ejercicio2.pojos.ProductosInfo;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;

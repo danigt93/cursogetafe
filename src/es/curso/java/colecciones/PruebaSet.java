@@ -3,8 +3,7 @@ package es.curso.java.colecciones;
 import java.util.HashSet;
 import java.util.Set;
 
-
-
+import es.curso.java.poo.Persona;
 
 
 public class PruebaSet {

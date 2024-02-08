@@ -9,6 +9,7 @@ import jakarta.persistence.EntityManager;
 public class HibernateEditar {
     public static void main(String[] args) {
 
+        
         EntityManager em = JpaUtil.getEM("hibernateMySQL");
         try {
 

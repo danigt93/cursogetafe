@@ -2,9 +2,9 @@ package es.curso.java.excepciones;
 
 import java.io.IOException;
 
+import es.curso.java.poo.ejercicios.supermercado.Cliente;
 
 public class LanzarExcepciones {
-
 
 	public static void main(String[] args) {
 		LanzarExcepciones le = new LanzarExcepciones();

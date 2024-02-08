@@ -1,41 +1,36 @@
 package es.curso.java.poo.ejercicios.maniqui;
 
-
 public class Boton {
 
 	private long id;
 	private String forma;
+	private double tamaño;
 	private String color;
-	private String tamanio;
-	
-	
-	
-	public Boton(long id, String forma, String color, String tamanio) {
-		super();
+
+	public Boton(long id, 
+			String forma, 
+			double tamaño, 
+			String color) {
 		this.id = id;
 		this.forma = forma;
+		this.tamaño = tamaño;
 		this.color = color;
-		this.tamanio = tamanio;
 	}
 
+	public long getId() {
+		return id;
+	}
 
 	public String getForma() {
 		return forma;
 	}
 
+	public double getTamaño() {
+		return tamaño;
+	}
 
 	public String getColor() {
 		return color;
 	}
 
-
-	public String getTamanio() {
-		return tamanio;
-	}
-
-
-	public long getId() {
-		return id;
-	}
-												
 }

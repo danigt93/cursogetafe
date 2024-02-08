@@ -9,7 +9,7 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 import es.curso.java.hibernate.ejercicios.ejercicio2.dao.ProductoDAO;
-import es.curso.java.hibernate.ejercicios.ejercicio2.entity.Producto;
+import es.curso.java.hibernate.ejercicios.ejercicio2.entities.Producto;
 import es.curso.java.lambdas.advanced.models.Usuario;
 
 public class EjemploConsumer {

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import es.curso.java.hibernate.basics.entities.Cliente;
 import es.curso.java.hibernate.ejercicios.ejercicio2.dao.ProductoDAO;
-import es.curso.java.hibernate.ejercicios.ejercicio2.entity.Producto;
+import es.curso.java.hibernate.ejercicios.ejercicio2.entities.Producto;
 
 public class Test {
 

@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -36,7 +37,7 @@ public class ArchivoServicio {
 			// try (PrintWriter buffer = new PrintWriter(new FileWriter(archivo))){
 
 			buffer.println("Hola que tal amigos!");
-			buffer.println("Todo bien? yo aquí escribiendo un archivo...");
+			buffer.println("Todo bien? yo acá escribiendo un archivo...");
 			buffer.printf("Hasta luego %s! %s", "JoseLuis5", "Cadena");
 			// buffer.close();
 			System.out.println("El archivo se ha creado con éxito!");

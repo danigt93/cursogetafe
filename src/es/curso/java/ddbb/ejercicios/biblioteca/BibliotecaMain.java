@@ -16,8 +16,7 @@ import es.curso.java.ddbb.ejercicios.biblioteca.dao.LibroDAO;
 import es.curso.java.ddbb.ejercicios.biblioteca.entities.Biblioteca;
 import es.curso.java.ddbb.ejercicios.biblioteca.entities.Libro;
 import es.curso.java.ddbb.ejercicios.biblioteca.exceptions.NoResultsException;
-import es.curso.java.utilidades.Utilidades;
-
+import es.curso.java.utils.Utilidades;
 
 public class BibliotecaMain {
 	
@@ -44,7 +43,6 @@ public class BibliotecaMain {
 		int opcion = crearMenuPrincipal();
 		if (opcion==(mapBibliotecas.size()+1)) {
 			System.out.println("Adios");
-			
 		}else {
 			Biblioteca biblioElegida= mapBibliotecas.get((long)opcion);
 			cargarSubmenu(biblioElegida);

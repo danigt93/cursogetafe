@@ -1,6 +1,6 @@
 package es.curso.java.poo.interfaces;
 
-public interface Interfaz1 {				// todosd los metodos van a ser Abstratcos o "abstract" y variables estaticas
+public interface Interfaz1 {
 
 	int NUM = 9;
 	

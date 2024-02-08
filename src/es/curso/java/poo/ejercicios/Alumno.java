@@ -10,9 +10,9 @@ public class Alumno {
 	private boolean vip;
 	
 	//Constructores
-//	public Alumno () {
-//		
-//	}
+	public Alumno () {
+		this.nombre = "Juan";
+	}
 	
 	public Alumno (String dni, String nombre, String apellidos) {
 		this.dni = dni;
@@ -20,7 +20,7 @@ public class Alumno {
 		this.apellidos = apellidos;
 	}
 	
-	public Alumno (String dni, String nombre, String apellidos , double nota, boolean vip) {
+	public Alumno (String dni, String nombre, String apellidos , double nota) {
 		this.dni = dni;
 		this.nombre = nombre;
 		this.apellidos = apellidos;
@@ -30,6 +30,17 @@ public class Alumno {
 		}
 	}
 	
+	
+	public Alumno(String dni, String nombre, String apellidos, 
+			double nota, boolean vip) {
+		super();
+		this.dni = dni;
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.nota = nota;
+		this.vip = vip;
+	}
+
 	//GETTER Y SETTER
 	public String getDni() {
 		return dni;
@@ -77,6 +88,12 @@ public class Alumno {
 		}else {
 			System.out.println("Es un genio");
 		}
+	}
+
+	@Override
+	public String toString() {
+		return "Alumno [" + (dni != null ? "dni=" + dni + ", " : "") + (nombre != null ? "nombre=" + nombre + ", " : "")
+				+ (apellidos != null ? "apellidos=" + apellidos : "") + "]";
 	}
 
 	

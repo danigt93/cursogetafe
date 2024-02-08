@@ -5,7 +5,7 @@ public class Biblioteca {
 	private String nombre;
 	private Direccion direccion;
 	
-	public Biblioteca(long idBiblioteca, String nombre, Direccion direccion) {
+	public Biblioteca(long id, String nombre, Direccion direccion) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
