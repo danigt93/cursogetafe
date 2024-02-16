@@ -25,7 +25,7 @@ public enum AlumnoEnum {
 		this.dni = dni;
 		this.user = user;
 	}
-	
+
 	
 	public String getNombre() {
 		return nombre;
